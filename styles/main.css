@@ -1,0 +1,70 @@
+
+.clear {clear: both; line-height: 0; font-size:0; height: 0; overflow: hidden;}
+
+.top {display: block; width: 100%;}
+	.top-holder {display: block; width: 90%; margin: auto; text-align: left;}
+		#searchField {display: inline-block; width: 200px; height: 15px; margin-top: 50px;}
+		#categorySearch {display: inline-block; width: 200px; height: 20px; margin-top: 50px;}
+		#searchBtn {display: inline-block; height: 20px; margin-top: 50px;}
+		.total-sum {display: block; width: 300px; float:right;}
+		.total-sum p {display: block; font-size: 30px; font-weight: bold; margin: 20px 0 30px 0;}
+		#clear_cart {margin-bottom: 20px;}
+body {background: #dbe6ff;}		
+
+/***fixed div on the side***/
+.side-right {display: block; width: 25%; float: right; position: absolute; padding: 20px 25px 0 25px; margin-top: 50px; box-sizing: border-box; right: 0; background: #4258ff; height: 100%;}
+	.editing {display: block; width: 100%;}
+	.editing h2 {display: block; font-size: 25px; font-weight: bold; text-decoration: underline; margin-bottom: 25px;}
+	.editing label {font-size: 20px; line-height: 25px;}
+	.editing input {display: block; width: 55%; margin-bottom: 20px;}
+	.editing select {display: block; width: 55%; margin-bottom: 20px;}
+	
+/***product list***/
+.products {display: block; width: 75%; float: left; background: #dbe6ff;}
+	.products-holder {display: block; width: 90%; margin: auto; padding-top: 50px;}
+		.products-holder .product-box {display: block; background: #afc8ff; width: 28%; float: left; margin-bottom: 40px; text-align: center; border: 1px solid grey; padding: 15px 0; box-shadow: 3px 3px 10px grey; box-sizing: border-box; border-radius: 10px;}
+		.products-holder .product-box:nth-of-type(3n+2) {margin-right: 8%; margin-left: 8%;}	
+			.products-holder .product_top {display: block; width: 100%;}
+				.products-holder .product_category {display: block; float: left; padding-left: 25px; font-size: 16px;}
+				.products-holder .upload_time {display: block; float: right; padding-right: 25px; font-size: 16px;}
+			.products-holder .image-holder {display: block; width: 100%; height: 230px; padding-top: 25px; box-sizing: border-box; text-align: center;}
+			.products-holder .image-holder img {display: inline-block; height: 140px; width: auto; vertical-align: middle;}
+		.products-holder .product_name {display: block; text-align: center; line-height: 40px; font-size: 18px; font-weight: 600;}
+		.products-holder .product_price {display: block; text-align: center; height: 30px; line-height: 25px; font-size: 22px; font-weight: bold;}
+		.products-holder .product-box input {display: inline-block; width: 50px; outline: none; text-align: center; margin-right: 5px;}
+		.products-holder .product-box button {display: inline-block; margin: 0 5px 0 5px; border-radius: 5px; cursor: pointer;}
+
+.cart {display: block; width: 100%; float: left; background: #42c2f4;}
+	.cart-holder {display: block; width: 90%; margin: auto; }
+	.cart-holder .product-box {display: block; background: #afc8ff; width: 15%; margin: 0 2.5%; float: left; margin-bottom: 20px; margin-top: 20px;text-align: center; border: 1px solid grey; padding: 5px 0; box-shadow: 3px 3px 10px grey; box-sizing: border-box; border-radius: 10px;}	
+			.cart-holder .product_top {display: block; width: 100%;}
+				.cart-holder .product_category {display: block; float: left; padding-left: 25px; font-size: 16px;}
+				.cart-holder .upload_time {display: block; float: right; padding-right: 25px; font-size: 16px;}
+			.cart-holder .image-holder {display: block; width: 100%; height: 100px; padding-top: 25px; box-sizing: border-box; text-align: center;}
+			.cart-holder .image-holder img {display: inline-block; height: 80px; width: auto; vertical-align: middle;}
+		.cart-holder .product_name {display: block; text-align: center; line-height: 30px; font-size: 15px; font-weight: 400;}
+		.cart-holder .product_price {display: block; text-align: center; height: 30px; line-height: 25px; font-size: 22px; font-weight: bold;}
+		.cart-holder .product-box input {display: inline-block; width: 50px; outline: none; text-align: center; margin-right: 5px;}
+		.cart-holder .product-box button {display: inline-block; margin: 0 7px; cursor: pointer; font-size: 20px; font-weight: bold; width: 30px; height: 30px; border-radius: 15px; outline: none;}
+		.cart-holder .product-box .cart-plus {background: #97ff6b;} 
+		.cart-holder .product-box .cart-minus {background: #ef4d3e;} 
+		#product_quantity {font-weight: bold; color: red; margin-top: 5px;}
+		
+/*********************************************************** LOGIN PAGE *****************************************************************/
+
+.login-main {display: block; width: 100%;}
+	.login-holder {display: block; width: 600px; margin: auto;}
+		.login-content {display: block; width: 100%; height: 500px; background: #5473f2; margin-top: 100px; border-radius: 50px; text-align: center;}
+			.login-content img {display: inline-block; width: 170px; height: 170px; margin: 50px}
+			.login-content input {display: block; width: 300px; margin: auto; margin-bottom: 30px; line-height: 20px; font-size: 16px; text-align: center; border-radius: 5px; font-weight: 600;}
+			.login-content button {display: inline-block; border: none; color: #fff; background: #101426; padding: 15px 30px; border-radius: 10px; text-decoration: none; margin-top: 10px; font-size: 18px; font-weight: 600; letter-spacing: 1px;}
+			.login-content button:hover {color: #101426; background: #dee0e8; cursor: pointer;}	
+
+
+
+
+
+
+
+
+		

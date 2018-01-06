@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store</title>
+
+	<link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	
+	  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body onpageshow="checkStorage()">
+<header>
+</header>
+<section class="top">
+	<div class="top-holder">
+		<input id="searchField" type="text" oninput="search()">
+		<select id="categorySearch" onchange="search()">
+			<option value="all">Svi proizvodi</option>
+		</select>
+		<button id="searchBtn" onclick="search()">Pretraga</button>
+		<div class="total-sum">
+			<p id="suma">Ukupno:</p>
+			<button id="clear_cart" onclick="fullCartClear()">Ocisti korpu</button>	
+		</div>
+	</div>
+</section>
+<section class="cart">
+	<div class="cart-holder" id="cart-holder">
+	</div>
+</section>
+<div class="clear"></div>
+<section class="side-right">
+	<div class="editing">
+		<div class="editing-box">
+			<h2>Odrzavanje strane</h2>
+				<label for="imgPath">Izaberite sliku proizvoda</label>
+				<br />
+				<input id="imgPath" type="file"></input>
+				<label for="prodPrice">Unesite cenu proizvoda</label>
+				<br />
+				<input id="prodPrice" type="number" min="0"></input>
+				<label for="input_prodname">Unesite naziv proizvoda</label>
+				<br />
+				<input id="input_prodname" type="text" required="true"></input>
+				<label for="input_category">Unesite kategoriju proizvoda</label>
+				<br />
+				<select id="input_category">
+				</select>
+				<label for="input_uploadtime">Datum postavljanja</label>
+				<br />
+				<input id="input_uploadtime" type="text"></input>
+				<button id="addProduct" onclick="formValidation()">Dodaj proizvod</button>
+				<br />
+		</div>
+	</div>	
+</section
+<div class="clear"></div>
+<section class="products" id="products">
+	<div class="products-holder" id="products-holder">	
+	</div>	
+</section>
+<div class="clear"></div>
+<footer>
+</footer>
+<script src="scripts/app.js" type="text/javascript"></script>
+</body>
+</html>
